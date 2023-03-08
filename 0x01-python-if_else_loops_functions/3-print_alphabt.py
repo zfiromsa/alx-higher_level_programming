@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-for alpha_letters in range(ord('a'), ord('z')+1):
-    if alpha_letters == 113 or alpha_letters == 101:
-       continue
-    print("{:c}".format(alpha_letters), end="")
+for i in range(97, 123):
+    if i != 113 and i != 101:
+        print("{}".format(chr(i)), end="")
