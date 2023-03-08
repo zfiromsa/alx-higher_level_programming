@@ -1,4 +1,4 @@
-#!/usr/bin/pythone3
+#!/usr/bin/python3
 def uppercase(str):
     conc = ""
     for x in str:
