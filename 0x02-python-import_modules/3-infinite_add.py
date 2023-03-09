@@ -4,5 +4,4 @@ if __name__ == "__main__":
     count = 0
     for i in sys.argv:
         count += i
-        str = "{}"
-    print(str.format(count))
+    print(count)
