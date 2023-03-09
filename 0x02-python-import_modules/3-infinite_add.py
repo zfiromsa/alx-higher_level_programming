@@ -1,7 +1,7 @@
-
+#!/usr/bin/python3
 import sys
-count = 0
-for i in sys.argv:
-    count += i
-    str = "{}"
-print(str.format(count))
+add = 0.00
+n = len(sys.argv)
+for i in range(1, n):
+    add += float(sys.argv[i])
+print(add)
