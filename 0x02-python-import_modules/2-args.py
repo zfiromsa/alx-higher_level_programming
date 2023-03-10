@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+#!/bin/python3
 import sys
 if __name__ == "__main__":
-    count = len.argv
+    count = len(sys.argv)
     for i in range(1, count):
-        print(argv[count])
+        print(sys.argv[count])
