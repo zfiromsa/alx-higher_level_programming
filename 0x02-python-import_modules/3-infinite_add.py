@@ -2,6 +2,7 @@
 import sys
 if __name__ == "__main__":
     _sum = 0
-    for i in sys.argv:
-        _sum = _sum + i
+    n = len(sys.argv)
+    for i in range(1, n):
+        _sum += int(sys.argv[i])
     print(_sum)
