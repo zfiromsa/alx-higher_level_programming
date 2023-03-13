@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
-    for count in range(0, len(my_list)):
-        print("{}".format(my_list[count]))
-
+    counter = 0
+    for item in my_list:
+        counter += 1
+    for i in range(0, counter):
+        print("{}".format(my_list[i]))
