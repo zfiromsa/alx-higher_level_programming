@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def uppercase(str):
     for chr in str:
         ascii_chr = ord(chr)
@@ -6,4 +6,3 @@ def uppercase(str):
             ascii_chr -= 32
         print("{:c}".format(ascii_chr), end='')
     print('\n')
-
