@@ -1,0 +1,5 @@
+#!/bin/bash
+PYFILEC="${PYFILE}c"
+python -m compileall -b $PYFILE
+mv __pycache__/*.pyc $PYFILEC
+rm -r __pycache__
