@@ -12,3 +12,5 @@ def safe_print_list(my_list=[], x=0):
     else:
         print(end="\n")
         return count
+    finally:
+        print(end="")
