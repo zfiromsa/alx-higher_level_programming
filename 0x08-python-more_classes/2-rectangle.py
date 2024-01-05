@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-class Rectangle:
-    """A Class Rectangle defines a rectangle."""
+"""
+This is a module for defining a Rectangle class.
+"""
 
+class Rectangle:
+    """
+    This is a Rectangle CLASS.
+    It current doesn't have any attributes or methodes.
+    """
     def __init__(self, width=0, height=0):
         """
         Initialize a new Rectangle.
