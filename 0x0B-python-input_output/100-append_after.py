@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This function that inserts a line of text to a file, after each line contain
+This module defines a function for inserting a line of text into a file after
+each line. containing a specific string.
 """
 
 
