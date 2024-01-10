@@ -1,0 +1,9 @@
+"""
+This is a test file for the 'read_file' function.
+
+>>> from 0-read_file import read_file
+>>> read_file('test.txt') #Assuming 'test.txt' contains 'Hello World'
+'Hello World'
+>>> read_file('test.txt') #Assuming 'test.txt' contains 'Hello Moti'
+'Hello Moti'
+"""
