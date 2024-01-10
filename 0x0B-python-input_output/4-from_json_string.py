@@ -13,7 +13,7 @@ def from_json_string(my_str):
 
     Args:
         my_str (str):  the json string to be converted to a python object.
-    
+
     Returns:
         obj: the python object represented by the json string.
     """
