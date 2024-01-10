@@ -1,0 +1,6 @@
+"""
+This is a test file for the 'append_write' function.
+>>> from 2-append_write import append_write
+>>> append_write('test.txt', "hello moti") # Assuming
+12
+"""
