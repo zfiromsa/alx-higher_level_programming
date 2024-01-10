@@ -6,7 +6,7 @@ and returns the number of characters written:
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """"
+    """
     Insert a line of text a file  after each line containing
     a specific string.
 
@@ -15,7 +15,7 @@ def append_after(filename="", search_string="", new_string=""):
         search_string (str): The specific string to search for in each line.
         new_string (str): The line of text to inser after  each line contain
         the search string.  
-    """"
+    """
     # Read the content of the file into a list of lines
     with open(filename, 'r', encoding='utf-8') as f:
         lines =f.readlines()
