@@ -5,7 +5,7 @@ at the end of a text file (UTF8) and returns the numberof characters added:
 ext file (UTF8) and returns the number of characters added:
 """
 
-def append_Write(filename="", text=""):
+def append_write(filename="", text=""):
     """
     This function Appends a string at the end of a text file (utf8)
     and return the number of charcters added.
