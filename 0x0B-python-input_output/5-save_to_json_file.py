@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """"Import json modul"""
 import json
-
+"""
+This a function that writes an Object to a text file, using a JSON represent:
+"""
 
 def save_to_json_file(my_obj, filename):
     """
