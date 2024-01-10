@@ -15,7 +15,8 @@ class MyInt(int):
 
     def __eq__(self, other):
         """
-        Override the == operator to return the inverted result of the != operator.
+        Override the == operator to return the inverted result
+            of the != operator.
         Args:
             other (Any): The value to compare with.
         Returns:
@@ -25,7 +26,8 @@ class MyInt(int):
 
     def __ne__(self, other):
         """
-        Override the != operator to return the inverted result of the == operator.
+        Override the != operator to return the inverted result
+            of the == operator.
         Args:
             other (Any): The value to compare with.
         Returns:
