@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-""""
-Import json modul
-"""
-
-
+""""Import json modul"""
 import json
+
 """"
 function that returns an object (Python data structure) represented by a JSON string:
 """
