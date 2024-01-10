@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-Module with append_Write function.
+function that appends a string at the end of function that appends a string
+at the end of a text file (UTF8) and returns the numberof characters added:
+ext file (UTF8) and returns the number of characters added:
 """
 
 def append_Write(filename="", text=""):
