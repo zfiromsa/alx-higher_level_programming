@@ -5,6 +5,8 @@ Write a class MyInt that inherits from int:
 MyInt is a rebel. MyInt has == and != operators inverted
 You are not allowed to import any module
 """
+
+
 class MyInt(int):
     """
     A custom integer class that inherits from the built-in int class,
