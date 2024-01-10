@@ -7,7 +7,7 @@ ext file (UTF8) and returns the number of characters added:
 
 def append_Write(filename="", text=""):
     """
-    Appends a string at the end of a text file (utf8)
+    This function Appends a string at the end of a text file (utf8)
     and return the number of charcters added.
 
     Args:
