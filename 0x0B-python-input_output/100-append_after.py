@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-THIS function that inserts a line of text to a file, after each
-line containing a specific string (see example):
+This function that inserts a line of text to a file, after each line contain
 """
 
 
@@ -13,7 +12,7 @@ def append_after(filename="", search_string="", new_string=""):
     Args:
         filename (str): the name of the file.
         search_string (str): The specific string to search for in each line.
-        new_string (str): The line of text to inser after  each line containing
+        new_string (str): The line of text to inser after  each line contain
         the search string.  
     """"
     # Read the content of the file into a list of lines
