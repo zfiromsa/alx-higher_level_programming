@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This function that inserts a line of text to a file, after each line contain
+function that writes a string to a text file (UTF8)
+and returns the number of characters written:
 """
 
 
