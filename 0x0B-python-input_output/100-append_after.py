@@ -7,7 +7,8 @@ line containing a specific string (see example):
 
 def append_after(filename="", search_string="", new_string=""):
     """"
-    Insert a line of text a file  after each line containing a specific string.
+    Insert a line of text a file  after each line containing
+    a specific string.
 
     Args:
         filename (str): the name of the file.
