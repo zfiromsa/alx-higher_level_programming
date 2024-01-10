@@ -14,13 +14,12 @@ def append_after(filename="", search_string="", new_string=""):
         filename (str): the name of the file.
         search_string (str): The specific string to search for in each line.
         new_string (str): The line of text to inser after  each line contain
-        the search string.  
     """
     # Read the content of the file into a list of lines
     with open(filename, 'r', encoding='utf-8') as f:
         lines =f.readlines()
     # Open the file in Write mode
-    with open(filename, 'W', encoding="utf-8") as f:
+    with open(filename, 'w', encoding="utf-8") as f:
         for line in lines:
             # Write each line to the file
             f.write(line)
