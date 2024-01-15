@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+""" Import Bsae from base"""
+from base import Base
+
 """
 The rectangle module defines the rectangle class.
 """
-from base import Base
+
 
 class Rectangle(Base):
     """

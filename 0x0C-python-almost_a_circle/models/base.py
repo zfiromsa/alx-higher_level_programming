@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-
+This module provides the main script for the Rectangle program.
+It creates two rectangle instances, displays them, and updates the second one before displaying it again.
 """
+
 
 
 class Base:
