@@ -2,7 +2,7 @@
 """
 The rectangle module defines the rectangle class.
 """
-from module.base import Base
+from base import Base
 
 class Rectangle(Base):
     """
