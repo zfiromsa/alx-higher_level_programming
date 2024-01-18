@@ -162,26 +162,20 @@ class Rectangle(Base):
         """
         This models that assigns an argument to each attribute
         """
-        if len(args) > 0:
-            if len(args) >= 1:
-                self.__id = args[0]
-            if len(args) >= 2:
-                self.__id = args[1]
-            if len(args) >= 3:
-                self.__id = args[2]
-            if len(args) >= 4:
-                self.__id = args[3]
-            if len(args) >= 5:
-                self.__id = args[4]
+        if args:
+            args_l = ["id", "width", "height", "x", "y"]
+            for i , value in enumerate(args_l):
+                setattr(self, args_l[i], value)
 
-        if "id" in kwargs:
-            self.__id = kwargs["id"]
-        if "height" in kwargs:
-            self.__height = kwargs["height"]
-        if "width" in kwargs:
-            self.__width = kwargs["width"]
-        if "x" in kwargs:
-            self.__x = kwargs["x"]
-        if "y" in kwargs:
-            self.__y = kwargs["y"]
+        elif kwargs:
+            if "id" in kwargs:
+                self.__id = kwargs["id"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
 
