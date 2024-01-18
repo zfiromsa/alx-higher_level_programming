@@ -135,38 +135,38 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-        def area(self):
-            return self.__height * self.__width
-        
-        def display(self):
-            for k in range(self.__y):
-                print()
-            for i in range(self.__height):
-                for l in range(self.__x):
-                    print(" ", end="")
-                for j in range(self.__width):
-                    print("#", end="")
-                print()
-        def update(self, *args, **kwargs):
-            if len(args) > 0:
-                if len(args) >= 1:
-                    self.__id = args[0]
-                if len(args) >= 2:
-                    self.__id = args[1]
-                if len(args) >= 3:
-                    self.__id = args[2]
-                if len(args) >= 4:
-                    self.__id = args[3]
-                if len(args) >= 5:
-                    self.__id = args[4]
+    def area(self):
+        return self.__height * self.__width
+    
+    def display(self):
+        for k in range(self.__y):
+            print()
+        for i in range(self.__height):
+            for l in range(self.__x):
+                print(" ", end="")
+            for j in range(self.__width):
+                print("#", end="")
+            print()
+    def update(self, *args, **kwargs):
+        if len(args) > 0:
+            if len(args) >= 1:
+                self.__id = args[0]
+            if len(args) >= 2:
+                self.__id = args[1]
+            if len(args) >= 3:
+                self.__id = args[2]
+            if len(args) >= 4:
+                self.__id = args[3]
+            if len(args) >= 5:
+                self.__id = args[4]
 
-            if "id" in kwargs:
-                self.__id = kwargs["id"]
-            if "height" in kwargs:
-                self.__height = kwargs["height"]
-            if "width" in kwargs:
-                self.__width = kwargs["width"]
-            if "x" in kwargs:
-                self.__x = kwargs["x"]
-            if "y" in kwargs:
-                self.__y = kwargs["y"]
+        if "id" in kwargs:
+            self.__id = kwargs["id"]
+        if "height" in kwargs:
+            self.__height = kwargs["height"]
+        if "width" in kwargs:
+            self.__width = kwargs["width"]
+        if "x" in kwargs:
+            self.__x = kwargs["x"]
+        if "y" in kwargs:
+            self.__y = kwargs["y"]
