@@ -29,10 +29,10 @@ class Rectangle(Base):
             id: An optional Id 
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def Width(self):
@@ -80,9 +80,9 @@ class Rectangle(Base):
         raises:
             valueError: if the provided value is not int or float
         """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("Width must be an integer")
-        if value < 0:
+        if value <= 0:
                 raise ValueError("width must be > 0")
         self.__width = value
 
@@ -99,7 +99,7 @@ class Rectangle(Base):
         """
         if isinstance(value, int):
             raise TypeError("height must be an integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
     
@@ -113,7 +113,7 @@ class Rectangle(Base):
         raises:
             valueError: if the provided value is not int or float
         """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
@@ -143,6 +143,8 @@ class Rectangle(Base):
         """
         return self.__height * self.__width
     
+    def __str__(self) -> str:
+        return f"[Rectangle] ({self.id}/{self.x} - {self.width}/{self.height})"
     def display(self):
         """
         This models prints in stdout the Rectangle instance 
