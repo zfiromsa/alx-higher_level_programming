@@ -34,140 +34,139 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        @property
-        def Width(self):
-            """
-            Get the width of the rectangle.
+    @property
+    def Width(self):
+        """
+        Get the width of the rectangle.
 
-            Returns: the width of the rectanle.
-            """
-            return self.__width
+        Returns: the width of the rectanle.
+        """
+        return self.__width
 
-        @property
-        def y(self):
-            """
-            Get the y-cordinate of the rectangle.
+    @property
+    def y(self):
+        """
+        Get the y-cordinate of the rectangle.
 
-            Returns: the y-cordinate of the rectanle.
-            """
-            return self.__y
+        Returns: the y-cordinate of the rectanle.
+        """
+        return self.__y
 
-        @property
-        def height(self):
-            """
-            Get the height of the rectangle.
+    @property
+    def height(self):
+        """
+        Get the height of the rectangle.
 
-            Returns: the height of the rectanle.
-            """
-            return self.__height
+        Returns: the height of the rectanle.
+        """
+        return self.__height
 
-        @property
-        def x(self):
-            """
-            Get the x-cordinate of the rectangle.
+    @property
+    def x(self):
+        """
+        Get the x-cordinate of the rectangle.
 
-            Returns: the x-cordinate of the rectanle.
-            """
-            return self.__width
+        Returns: the x-cordinate of the rectanle.
+        """
+        return self.__width
 
-        @Width.setter
-        def width(self, value):
-            """
-            set the width of the rectangle.
+    @Width.setter
+    def width(self, value):
+        """
+        set the width of the rectangle.
 
-            parameters:
-                value: the new width of the rectangle.
-            raises:
-                valueError: if the provided value is not int or float
-            """
-            if isinstance(value, int):
-                raise TypeError("Width must be an integer")
-            if value < 0:
-                    raise ValueError("width must be > 0")
-            self.__width = value
+        parameters:
+            value: the new width of the rectangle.
+        raises:
+            valueError: if the provided value is not int or float
+        """
+        if isinstance(value, int):
+            raise TypeError("Width must be an integer")
+        if value < 0:
+                raise ValueError("width must be > 0")
+        self.__width = value
 
+    
+    @height.setter
+    def set_height(self, value):
+        """
+        set the heihgt of the rectangle.
+
+        parameters:
+            value: the new height of the rectangle.
+        raises:
+            valueError: if the provided value is not int or float
+        """
+        if isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be > 0")
+        self.__height = value
+    
+    @x.setter
+    def set_x(self, value):
+        """
+        set the x-cordinate of the rectangle.
+
+        parameters:
+            value: the new x-coordinate of the rectangle.
+        raises:
+            valueError: if the provided value is not int or float
+        """
+        if isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
+    
+    @y.setter
+    def set_y(self, value):
+        """
+        set the y-cordinate of the rectangle.
+
+        parameters:
+            value: the new y-coordinate of the rectangle.
+        raises:
+            valueError: if the provided value is not int or float
+        """
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
+
+        def area(self):
+            return self.__height * self.__width
         
-        @height.setter
-        def set_height(self, value):
-            """
-            set the heihgt of the rectangle.
+        def display(self):
+            for k in range(self.__y):
+                print()
+            for i in range(self.__height):
+                for l in range(self.__x):
+                    print(" ", end="")
+                for j in range(self.__width):
+                    print("#", end="")
+                print()
+        def update(self, *args, **kwargs):
+            if len(args) > 0:
+                if len(args) >= 1:
+                    self.__id = args[0]
+                if len(args) >= 2:
+                    self.__id = args[1]
+                if len(args) >= 3:
+                    self.__id = args[2]
+                if len(args) >= 4:
+                    self.__id = args[3]
+                if len(args) >= 5:
+                    self.__id = args[4]
 
-            parameters:
-                value: the new height of the rectangle.
-            raises:
-                valueError: if the provided value is not int or float
-            """
-            if isinstance(value, int):
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be > 0")
-            self.__height = value
-        
-        @x.setter
-        def set_x(self, value):
-            """
-            set the x-cordinate of the rectangle.
-
-            parameters:
-                value: the new x-coordinate of the rectangle.
-            raises:
-                valueError: if the provided value is not int or float
-            """
-            if isinstance(value, int):
-                raise TypeError("x must be an integer")
-            if value < 0:
-                raise ValueError("x must be >= 0")
-            self.__x = value
-        
-        @y.setter
-        def set_y(self, value):
-            """
-            set the y-cordinate of the rectangle.
-
-            parameters:
-                value: the new y-coordinate of the rectangle.
-            raises:
-                valueError: if the provided value is not int or float
-            """
-            if not isinstance(value, int):
-                raise TypeError("y must be an integer")
-            if value < 0:
-                raise ValueError("y must be >= 0")
-            self.__y = value
-
-            def area(self):
-                return self.__height * self.__width
-            
-            def display(self):
-                for k in range(self.__y):
-                    print()
-                for i in range(self.__height):
-                    for l in range(self.__x):
-                        print(" ", end="")
-                    for j in range(self.__width):
-                        print("#", end="")
-                    print()
-            def update(self, *args, **kwargs):
-                if len(args) > 0:
-                    if len(args) >= 1:
-                        self.__id = args[0]
-                    if len(args) >= 2:
-                        self.__id = args[1]
-                    if len(args) >= 3:
-                        self.__id = args[2]
-                    if len(args) >= 4:
-                        self.__id = args[3]
-                    if len(args) >= 5:
-                        self.__id = args[4]
-
-                if "id" in kwargs:
-                    self.__id = kwargs["id"]
-                if "height" in kwargs:
-                    self.__height = kwargs["height"]
-                if "width" in kwargs:
-                    self.__width = kwargs["width"]
-                if "x" in kwargs:
-                    self.__x = kwargs["x"]
-                if "y" in kwargs:
-                    self.__y = kwargs["y"]
- 
+            if "id" in kwargs:
+                self.__id = kwargs["id"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
