@@ -34,6 +34,7 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+        @get_Width
         def get_Width(self):
             """
             Get the width of the rectangle.
@@ -42,6 +43,7 @@ class Rectangle(Base):
             """
             return self.__width
         
+        @set_width
         def set_width(self, value):
             """
             set the width of the rectangle.
@@ -56,6 +58,7 @@ class Rectangle(Base):
             else:
                 raise ValueError("Width must be an integer")
             
+        @get_height
         def get_height(self):
             """
             Get the height of the rectangle.
@@ -64,6 +67,7 @@ class Rectangle(Base):
             """
             return self.__height
         
+        @set_height
         def set_height(self, value):
             """
             set the heihgt of the rectangle.
@@ -78,6 +82,7 @@ class Rectangle(Base):
             else:
                 raise ValueError("Height must be an integer")
 
+        @get_x
         def get_x(self):
             """
             Get the x-cordinate of the rectangle.
@@ -86,6 +91,7 @@ class Rectangle(Base):
             """
             return self.__width
         
+        @set_x
         def set_x(self, value):
             """
             set the x-cordinate of the rectangle.
@@ -102,7 +108,7 @@ class Rectangle(Base):
             else:
                 raise ValueError("x must be an integer")
                 
-            
+        @get_y
         def get_y(self):
             """
             Get the y-cordinate of the rectangle.
@@ -111,6 +117,7 @@ class Rectangle(Base):
             """
             return self.__y
         
+        @set_y
         def set_y(self, value):
             """
             set the y-cordinate of the rectangle.
