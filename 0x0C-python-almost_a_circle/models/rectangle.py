@@ -29,10 +29,10 @@ class Rectangle(Base):
             id: An optional Id 
         """
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def Width(self):
@@ -97,7 +97,7 @@ class Rectangle(Base):
         raises:
             valueError: if the provided value is not int or float
         """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
