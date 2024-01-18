@@ -184,3 +184,4 @@ class Rectangle(Base):
             self.__x = kwargs["x"]
         if "y" in kwargs:
             self.__y = kwargs["y"]
+
