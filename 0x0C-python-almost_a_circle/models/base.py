@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
 This module provides the main script for the Rectangle program.
-It creates two rectangle instances, displays them, and updates the second one before displaying it again.
+It creates two rectangle instances, displays them, and 
+updates the second one before displaying it again.
 """
-
 
 
 class Base:
@@ -19,7 +19,7 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            self.id = Base.__nb_objects
             Base.__nb_objects += 1
-
+            self.id = Base.__nb_objects
+            
 
