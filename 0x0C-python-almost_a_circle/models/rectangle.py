@@ -136,9 +136,18 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """
+        This mudels calculate the area of a rectangle.
+
+        Returns: the area value of the Rectangle instance.
+        """
         return self.__height * self.__width
     
     def display(self):
+        """
+        This models prints in stdout the Rectangle instance 
+        with the character # 
+        """
         for k in range(self.__y):
             print()
         for i in range(self.__height):
@@ -148,6 +157,9 @@ class Rectangle(Base):
                 print("#", end="")
             print()
     def update(self, *args, **kwargs):
+        """
+        This models that assigns an argument to each attribute
+        """
         if len(args) > 0:
             if len(args) >= 1:
                 self.__id = args[0]
