@@ -79,7 +79,7 @@ class Rectangle(Base):
             raises:
                 valueError: if the provided value is not int or float
             """
-            if isinstance(value, (int, float)):
+            if isinstance(value, int):
                 if value < 0:
                     raise ValueError("height must be > 0")
                 self.__height = value
