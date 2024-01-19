@@ -148,7 +148,7 @@ class Rectangle(Base):
         return self.__height * self.__width
     
     def __str__(self):
-        return f"[Rectangle] ({self.id} {self.x}/{self.y} - {self.width}/{self.height})"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
     def display(self):
         """
         This models prints in stdout the Rectangle instance 
