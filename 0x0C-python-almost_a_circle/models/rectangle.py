@@ -30,9 +30,9 @@ class Rectangle(Base):
         """
         super().__init__(id)
         self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def Width(self):
@@ -68,7 +68,7 @@ class Rectangle(Base):
 
         Returns: the x-cordinate of the rectanle.
         """
-        return self.__width
+        return self.__x
 
     @Width.setter
     def width(self, value):
@@ -81,7 +81,7 @@ class Rectangle(Base):
             valueError: if the provided value is not int or float
         """
         if not isinstance(value, int):
-            raise TypeError("Width must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
