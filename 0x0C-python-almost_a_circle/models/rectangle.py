@@ -29,7 +29,7 @@ class Rectangle(Base):
             id: An optional Id 
         """
         super().__init__(id)
-        self.__width = width
+        self.width = width
         self.height = height
         self.x = x
         self.y = y
