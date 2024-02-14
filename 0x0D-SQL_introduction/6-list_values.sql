@@ -1,11 +1,4 @@
-#!/usr/bin/bash
+---A script that lists all rows of the table first_table from the database
+--- hbtn_0c_0 in your MySQL server.
 
-if [ $# -ne 1]; then
-    echo "Usage: $0 <database_name>"
-    exit 1
-fi
-database="$1"
-
-sql_que="SELECT * FROM $database.first_table;"
-
-mysql -u root -p -e "sql_que"
+SELECT * FROM first_table;
