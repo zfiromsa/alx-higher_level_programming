@@ -1,10 +1,3 @@
-#!/usr/bin/bash
-
-if [ $# -ne 1]; then
-    echo "Usage: $0 <database_name>"
-    exit 1
-fi
-database="$1"
-
-sql_que="SELECT score, name FROM {$database}.second_table ORDER BY score DESC"
-mysql -u root -p -e "$sql_que" $database
+--- A script that lists all records of the table second_table of the database
+--- hbtn_0c_0 in your MySQL server.
+SELECT score, name FROM second_table ORDER BY score DESC

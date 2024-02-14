@@ -1,11 +1,3 @@
-#!/usr/bin/bash
-
-if [ $# -ne 1]; then
-    echo "Usage: $0 <database_name>"
-    exit 1
-fi
-database="$1"
-
-sql_que="SELECT COUNT(*) FROM $database.first_table WHERE i = 89;"
-mysql -u root -p -e "sql_que" | tail -n 1
-
+--- A script that displays the number of records with id = 89 in the 
+--- table first_table of the database hbtn_0c_0 in
+SELECT COUNT(*) FROM $database.first_table WHERE i = 89;

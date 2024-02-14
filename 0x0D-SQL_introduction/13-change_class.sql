@@ -1,11 +1,3 @@
-#!/usr/bin/bash
-
-if [ $# -ne 1]; then
-    echo "Usage: $0 <database_name>"
-    exit 1
-fi
-database="$1"
-
-delete_que="DELETE FROM {$database}.second_table WHERE score <= 5;"
-mysql -u root -p -e "$delete_que" $database
-
+--- A script that removes all records with a score <= 5 in the table
+-- second_table of the database hbtn_0c_0 in your MySQL server.
+DELETE FROM second_table WHERE score <= 5;
