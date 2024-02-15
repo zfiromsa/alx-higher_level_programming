@@ -4,7 +4,7 @@
 --     Results must be sorted in ascending order by cities.id
 --     You are not allowed to use the JOIN keyword
 --     The database name will be passed as an argument of the mysql command
-USE hbtn_0d_user;
+USE hbtn_0d_usa;
 
 SELECT cities.id, cities.name
 FROM cities, states
