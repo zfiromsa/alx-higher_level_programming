@@ -9,7 +9,7 @@ else if (args.length === 1)
 {
     console.log("Argument found");
 }
-else (args.length === 0)
+else
 {
     console.log("Arguments found");
 }
