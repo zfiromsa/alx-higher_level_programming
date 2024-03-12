@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const args = process.arg.slice(2);
 
 if (args.length === 0)
